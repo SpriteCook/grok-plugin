@@ -1,0 +1,22 @@
+{
+  "name": "spritecook",
+  "version": "0.1.0",
+  "description": "Generate game art, cohesive UI kits, sprites, tilesets, and short animations in Grok Build with SpriteCook.",
+  "author": {
+    "name": "SpriteCook",
+    "email": "support@spritecook.ai",
+    "url": "https://spritecook.ai"
+  },
+  "homepage": "https://spritecook.ai",
+  "repository": "https://github.com/SpriteCook/grok-plugin",
+  "license": "MIT",
+  "keywords": [
+    "spritecook",
+    "game-art",
+    "sprites",
+    "pixel-art",
+    "tilesets",
+    "animation",
+    "mcp"
+  ]
+}
