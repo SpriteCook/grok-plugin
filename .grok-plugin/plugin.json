@@ -1,7 +1,7 @@
 {
   "name": "spritecook",
   "version": "0.1.0",
-  "description": "Generate game art, cohesive UI kits, sprites, tilesets, and short animations in Grok Build with SpriteCook.",
+  "description": "Generate animated pixel art sprites in Grok Build",
   "author": {
     "name": "SpriteCook",
     "email": "support@spritecook.ai",
