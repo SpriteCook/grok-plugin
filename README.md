@@ -5,7 +5,7 @@ SpriteCook generates game art from Grok Build: sprites, characters, tilesets, UI
 ## What's Included
 
 - `.mcp.json`: the hosted SpriteCook MCP server (`https://mcp.spritecook.ai/mcp/oauth`), which you sign in to with your SpriteCook account
-- `skills/`: workflow skills for sprites, tilesets, UI kits, animation, uploads, presets, edge cleanup, and Godot export
+- `skills/`: workflow skills for sprites, tilesets, UI kits, animation, uploads, presets, edge cleanup, and Godot export, plus a Grok-specific skill that walks you through signing in
 - `.grok-plugin/plugin.json`: the plugin manifest
 
 ## Install
@@ -16,7 +16,11 @@ grok plugin install https://github.com/SpriteCook/grok-plugin
 
 ## Connect Your Account
 
-The first time the agent calls a SpriteCook tool, Grok Build opens the SpriteCook sign-in in your browser. Approve the connection and you're set. Grok Build stores and refreshes the sign-in itself, so you never paste an API key.
+1. In Grok Build, type `/mcps`.
+2. Select `spritecook` and press `i` to sign in.
+3. Approve the connection on the SpriteCook page that opens in your browser.
+
+You only do this once. Grok Build stores and refreshes the sign-in itself, so you never paste an API key.
 
 You need a SpriteCook account. Every account gets free credits each month, and paid plans add more.
 
@@ -45,7 +49,7 @@ SpriteCook uses your prompts, and any images you choose to upload, to generate y
 
 ## Skill Source of Truth
 
-Bundled workflow skills come from [SpriteCook/skills](https://github.com/SpriteCook/skills). Update that repository first, then sync its committed skills into `skills/`. [skills-source.json](skills-source.json) records the exact bundled source revision.
+Bundled workflow skills come from [SpriteCook/skills](https://github.com/SpriteCook/skills). Update that repository first, then sync its committed skills into `skills/`. [skills-source.json](skills-source.json) records the exact bundled source revision. `skills/spritecook-connect-mcp` is specific to Grok Build and lives only in this repository.
 
 ## License
 
